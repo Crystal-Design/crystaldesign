@@ -139,3 +139,37 @@ $cyan-700: shade-color($cyan, 40%);
 $cyan-800: shade-color($cyan, 60%);
 $cyan-900: shade-color($cyan, 80%);
 // scss-docs-end subsets-of-colors
+
+// Typography
+
+//scss-docs-start font selection
+$font-family-sans-serif: system-ui, -apple-system, "Open Sans", "Segoe UI",
+  Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//scss-docs-end font selection
+
+//scss-docs-start font behaviours
+$font-base-size: 1rem;
+$font-sm-size: $font-base-size * 0.875;
+$font-lg-size: $font-base-size * 1.25;
+
+$font-base-weight: 400;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$line-base-height: 1.5;
+$line-sm-height: 1.25;
+$line-lg-height: 2;
+
+$h1-font-size: $font-base-size * 2.5;
+$h2-font-size: $font-base-size * 2;
+$h3-font-size: $font-base-size * 1.75;
+$h5-font-size: $font-base-size * 1.25;
+$h6-font-size: $font-base-size;
+
+//scss-docs-end font behaviours
