@@ -1,0 +1,175 @@
+// Variables
+
+// Color palette
+// scss-docs-start primary-colors
+$ruby: #a40942;
+$cymophane: #c1a30f;
+$tapaz: #c03914;
+$tourmaline: #ffc0cb;
+$alexandrate: #4b0303;
+$beryl: #039141;
+$aquamarine: #00a097;
+$sapphire: #0f52ba;
+$amethyst: #073b4c;
+$cyan: #0dcaf0;
+$white: #ffffff;
+$black: #000000;
+// scss-docs-end primary-colors
+
+// scss-docs-start grays
+$gray-100: #ffffff;
+$gray-200: #e6e6e6;
+$gray-300: #cccccc;
+$gray-400: #b3b3b3;
+$gray-500: #999999;
+$gray-600: #808080;
+$gray-700: #666666;
+$gray-800: #4d4d4d;
+$gray-900: #333333;
+// scss-docs-end grays
+
+// scss-docs-start subsets-of-colors
+$ruby-100: tint-color($ruby, 80%);
+$ruby-200: tint-color($ruby, 60%);
+$ruby-300: tint-color($ruby, 40%);
+$ruby-400: tint-color($ruby, 20%);
+$ruby-500: $ruby;
+$ruby-600: shade-color($ruby, 20%);
+$ruby-700: shade-color($ruby, 40%);
+$ruby-800: shade-color($ruby, 60%);
+$ruby-900: shade-color($ruby, 80%);
+
+$cymophane-100: tint-color($cymophane, 80%);
+$cymophane-200: tint-color($cymophane, 60%);
+$cymophane-300: tint-color($cymophane, 40%);
+$cymophane-400: tint-color($cymophane, 20%);
+$cymophane-500: $cymophane;
+$cymophane-600: shade-color($cymophane, 20%);
+$cymophane-700: shade-color($cymophane, 40%);
+$cymophane-800: shade-color($cymophane, 60%);
+$cymophane-900: shade-color($cymophane, 80%);
+
+$tapaz-100: tint-color($tapaz, 80%);
+$tapaz-200: tint-color($tapaz, 60%);
+$tapaz-300: tint-color($tapaz, 40%);
+$tapaz-400: tint-color($tapaz, 20%);
+$tapaz-500: $tapaz;
+$tapaz-600: shade-color($tapaz, 20%);
+$tapaz-700: shade-color($tapaz, 40%);
+$tapaz-800: shade-color($tapaz, 60%);
+$tapaz-900: shade-color($tapaz, 80%);
+
+$tourmaline-100: tint-color($tapaz, 80%);
+$tourmaline-200: tint-color($tapaz, 60%);
+$tourmaline-300: tint-color($tapaz, 40%);
+$tourmaline-400: tint-color($tapaz, 20%);
+$tourmaline-500: $tapaz;
+$tourmaline-600: shade-color($tapaz, 20%);
+$tourmaline-700: shade-color($tapaz, 40%);
+$tourmaline-800: shade-color($tapaz, 60%);
+$tourmaline-900: shade-color($tapaz, 80%);
+
+$alexandrate-100: tint-color($alexandrate, 80%);
+$alexandrate-200: tint-color($alexandrate, 60%);
+$alexandrate-300: tint-color($alexandrate, 40%);
+$alexandrate-400: tint-color($alexandrate, 20%);
+$alexandrate-500: $alexandrate;
+$alexandrate-600: shade-color($alexandrate, 20%);
+$alexandrate-700: shade-color($alexandrate, 40%);
+$alexandrate-800: shade-color($alexandrate, 60%);
+$alexandrate-900: shade-color($alexandrate, 80%);
+
+$beryl-100: tint-color($beryl, 80%);
+$beryl-200: tint-color($beryl, 60%);
+$beryl-300: tint-color($beryl, 40%);
+$beryl-400: tint-color($beryl, 20%);
+$beryl-500: $beryl;
+$beryl-600: shade-color($beryl, 20%);
+$beryl-700: shade-color($beryl, 40%);
+$beryl-800: shade-color($beryl, 60%);
+$beryl-900: shade-color($beryl, 80%);
+
+$aquamarine-100: tint-color($aquamarine, 80%);
+$aquamarine-200: tint-color($aquamarine, 60%);
+$aquamarine-300: tint-color($aquamarine, 40%);
+$aquamarine-400: tint-color($aquamarine, 20%);
+$aquamarine-500: $aquamarine;
+$aquamarine-600: shade-color($aquamarine, 20%);
+$aquamarine-700: shade-color($aquamarine, 40%);
+$aquamarine-800: shade-color($aquamarine, 60%);
+$aquamarine-900: shade-color($aquamarine, 80%);
+
+$sapphire-100: tint-color($sapphire, 80%);
+$sapphire-200: tint-color($sapphire, 60%);
+$sapphire-300: tint-color($sapphire, 40%);
+$sapphire-400: tint-color($sapphire, 20%);
+$sapphire-500: $sapphire;
+$sapphire-600: shade-color($sapphire, 20%);
+$sapphire-700: shade-color($sapphire, 40%);
+$sapphire-800: shade-color($sapphire, 60%);
+$sapphire-900: shade-color($sapphire, 80%);
+
+$amethyst-100: tint-color($amethyst, 80%);
+$amethyst-200: tint-color($amethyst, 60%);
+$amethyst-300: tint-color($amethyst, 40%);
+$amethyst-400: tint-color($amethyst, 20%);
+$amethyst-500: $amethyst;
+$amethyst-600: shade-color($amethyst, 20%);
+$amethyst-700: shade-color($amethyst, 40%);
+$amethyst-800: shade-color($amethyst, 60%);
+$amethyst-900: shade-color($amethyst, 80%);
+
+$cyan-100: tint-color($cyan, 80%);
+$cyan-200: tint-color($cyan, 60%);
+$cyan-300: tint-color($cyan, 40%);
+$cyan-400: tint-color($cyan, 20%);
+$cyan-500: $cyan;
+$cyan-600: shade-color($cyan, 20%);
+$cyan-700: shade-color($cyan, 40%);
+$cyan-800: shade-color($cyan, 60%);
+$cyan-900: shade-color($cyan, 80%);
+
+$cyan-100: tint-color($cyan, 80%);
+$cyan-200: tint-color($cyan, 60%);
+$cyan-300: tint-color($cyan, 40%);
+$cyan-400: tint-color($cyan, 20%);
+$cyan-500: $cyan;
+$cyan-600: shade-color($cyan, 20%);
+$cyan-700: shade-color($cyan, 40%);
+$cyan-800: shade-color($cyan, 60%);
+$cyan-900: shade-color($cyan, 80%);
+// scss-docs-end subsets-of-colors
+
+// Typography
+
+//scss-docs-start font selection
+$font-family-sans-serif: system-ui, -apple-system, "Open Sans", "Segoe UI",
+  Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//scss-docs-end font selection
+
+//scss-docs-start font behaviours
+$font-base-size: 1rem;
+$font-sm-size: $font-base-size * 0.875;
+$font-lg-size: $font-base-size * 1.25;
+
+$font-base-weight: 400;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$line-base-height: 1.5;
+$line-sm-height: 1.25;
+$line-lg-height: 2;
+
+$h1-font-size: $font-base-size * 2.5;
+$h2-font-size: $font-base-size * 2;
+$h3-font-size: $font-base-size * 1.75;
+$h5-font-size: $font-base-size * 1.25;
+$h6-font-size: $font-base-size;
+
+//scss-docs-end font behaviours
