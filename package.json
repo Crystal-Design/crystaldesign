@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "build": "concurrently \"npm run build:scss\" \"tsc --emitDeclarationOnly && vite build\"",
     "build:sass": "node-sass -w sass -o public/css",
     "storybook": "storybook dev -p 6006",
@@ -14,7 +15,8 @@
   "dependencies": {
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.0-beta.54",
