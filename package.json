@@ -1,0 +1,35 @@
+{
+  "name": "crystaldesign",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "concurrently \"npm run build:scss\" \"tsc --emitDeclarationOnly && vite build\"",
+    "build:sass": "node-sass -w sass -o public/css",
+    "storybook": "storybook dev -p 6006",
+    "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
+    "build-storybook": "storybook build",
+    "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css"
+  },
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.54",
+    "@storybook/addon-interactions": "^7.0.0-beta.54",
+    "@storybook/addon-links": "^7.0.0-beta.54",
+    "@storybook/blocks": "^7.0.0-alpha.8",
+    "@storybook/react": "^7.0.0-beta.54",
+    "@storybook/react-vite": "^7.0.0-beta.54",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.0-beta.54",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
+}
